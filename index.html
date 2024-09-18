@@ -209,8 +209,34 @@
       <div class="content has-text-justified">
         <h
         <p>
+          Negative-mined Mosaic Augmentation creates hard examples with no cost.
+          Exposure to hard examples can improve a model in complex scenarios.
+          Complexity arises when multiple similar objects coexist, requiring deeper understanding of the scene and expression.
+          NeMo simply retrieves negative images and creates a mosaic to mimic such challenging RIS problems with no data-collection cost.
+
+        Negative Mining with Filter adjusts difficulty level & avoid invalid mosaics. 
+        Sort all candidate images by relevance score with a given text (or image) estimated by a cross-modal model, e.g., CLIP.
+        Filter out excessively similar images (upper-bound τ) and select three hard negative images among top-K plausible images (lower-bound K).
+        Proper level of difficulty, neither too challenging nor too simple, is important for NeMo performance.
+        Optimal τ and K values vary by dataset; for simpler datasets, using less visually similar images reduces the risk of false positives and false negatives.
+          
         </p>
         <img src="static/images/pipeline.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body"> 
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Overall Comparison</h2>
+      <div class="content has-text-justified">
+        <h
+        <p>
+         We observe a larger performance boost on more complex datasets.  Harder datasets benefit more because of its intricate referring expressions and visually dense scenes.
+        </p>
+        <img src="static/images/overall_comparison.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
       </div>
     </div>
   </div>
