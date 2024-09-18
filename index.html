@@ -193,14 +193,17 @@
 <section class="hero is-small is-light">
   <div class="hero-body"> 
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Motivation</h2>
-      <div class="content has-text-justified">
-        <h
-        <p>
+      <div class="column is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Motivation</h2>
+          <div class="content has-text-justified">
+            <p>
           We manually pick 100 easy and hard samples depending on the number of negative objects. A huge performance gap exists between easy & hard examples in current models. Variant Inter and even Intra-dataset grounding difficulty levels exist in training data as well. We ask if these samples are challenging enough to discern subtle visual and textual nuance for RIS.
 <!--           We evaluate if the current models actually perform well in hard cases by manually picking examples by considering the number of negative objects. Surprisingly, we find there is a huge performance gap between easy and hard scenarios. To find a possible cause, we have inspected training samples, and found many easy samples even within the dataset that are thought to be harder, once we also consider the degree of visual ambiguity in the scene given the query. We assume these samples may not be challenging enough to train models for capabilities that RIS needs. -->
         </p>
         <img src="static/images/motivation.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -209,10 +212,11 @@
 <section class="hero is-small">
   <div class="hero-body"> 
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Overall Pipeline</h2>
-      <div class="content has-text-justified">
-        <h
-        <p>
+      <div class="column is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Overall Pipeline</h2>
+          <div class="content has-text-justified">
+            <p>
           Negative-mined Mosaic Augmentation creates hard examples with no cost.
           Exposure to hard examples can improve a model in complex scenarios.
           Complexity arises when multiple similar objects coexist, requiring deeper understanding of the scene and expression.
@@ -225,7 +229,9 @@
         Optimal τ and K values vary by dataset; for simpler datasets, using less visually similar images reduces the risk of false positives and false negatives.
           
         </p>
-        <img src="static/images/pipeline.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
+        <img src="static/images/pipeline.jpeg" width="80%" class="center" style="display: block; margin: 0 auto;">
+          </div>
+        </div>
       </div>
     </div>
   </div>
