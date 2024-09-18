@@ -174,10 +174,10 @@
 <section class="hero is-small">
   <div class="hero-body"> 
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Referring Image Segmentation</h2>
+      <h2 class="title is-3">Introduction</h2>
       <div class="content has-text-justified">
         <p>
-          Referring Image Segmentation segments an object when you are given an image and a free-form query referring to that certain target object. What differentiates RIS from other grounding tasks is that the scene is usually given in the way that visually similar objects coexist. Due to this nature of RIS task, we find difficulty levels in RIS can change depending on the number of negative objects that look similar to the target referent. The more negative objects you have, the more difficult the RIS problem becomes and the model needs to fully understand the words to discern similar objects.
+<!--           Referring Image Segmentation segments an object when you are given an image and a free-form query referring to that certain target object. What differentiates RIS from other grounding tasks is that the scene is usually given in the way that visually similar objects coexist. Due to this nature of RIS task, we find difficulty levels in RIS can change depending on the number of negative objects that look similar to the target referent. The more negative objects you have, the more difficult the RIS problem becomes and the model needs to fully understand the words to discern similar objects. -->
           Referring Image Segmentation predicts a segmentation mask of the object referred with a given an image and a text. The key to RIS task is to discern the referent among visually similar objects via textual cues. The difficulty of each RIS scenario can be affected by the degree of visual ambiguity in the scene given the linguistic complexity of the referring expression.
         </p>
         <img src="static/images/intro.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
@@ -189,12 +189,28 @@
 <section class="hero is-small is-light">
   <div class="hero-body"> 
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Motivation : Performance Gap between Easy & Hard Samples</h2>
+      <h2 class="title is-3">Motivation</h2>
       <div class="content has-text-justified">
+        <h
         <p>
           We manually pick 100 easy and hard samples depending on the number of negative objects. A huge performance gap exists between easy & hard examples in current models. Variant Inter and even Intra-dataset grounding difficulty levels exist in training data as well. We ask if these samples are challenging enough to discern subtle visual and textual nuance for RIS.
+<!--           We evaluate if the current models actually perform well in hard cases by manually picking examples by considering the number of negative objects. Surprisingly, we find there is a huge performance gap between easy and hard scenarios. To find a possible cause, we have inspected training samples, and found many easy samples even within the dataset that are thought to be harder, once we also consider the degree of visual ambiguity in the scene given the query. We assume these samples may not be challenging enough to train models for capabilities that RIS needs. -->
         </p>
-        <img src="static/images/intro.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
+        <img src="static/images/motivation.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body"> 
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Overall Pipeline</h2>
+      <div class="content has-text-justified">
+        <h
+        <p>
+        </p>
+        <img src="static/images/pipeline.jpeg" width="100%" class="center" style="display: block; margin: 0 auto;">
       </div>
     </div>
   </div>
